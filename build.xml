@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+<project name="MangoDocs" default="jar">
+
+    <target name="both" depends="jar, run">
+    </target>
+
+    <target name="clean">
+        <delete dir="build"/>
+        <delete dir="output"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="build/classes"/>
+        <javac srcdir="src" destdir="build/classes" debug="on"/>
+    </target>
+
+    <target name="jar" depends="clean, compile">
+        <mkdir dir="build/jar"/>
+        <jar destfile="build/jar/mangodoc.jar" basedir="build/classes">
+            <manifest>
+                <attribute name="Main-Class" value="com.mangoshine.doc.MangoDoc"/>
+            </manifest>
+            <fileset dir="." includes="assets/**"/>
+        </jar>
+    </target>
+
+    <target name="run">
+        <java jar="build/jar/mangodoc.jar" fork="true">
+            <arg line="-i inputfile -o outputdir"/>
+        </java>
+    </target>
+
+</project>

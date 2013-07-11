@@ -1,0 +1,518 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/*
+ * DOM
+ * ===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+  height: 100%;
+  color: #333;
+  background: #fdfdfd;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+body {
+  padding: 0px 20px;
+}
+
+span, div, p {
+  font-size: 15px;
+}
+
+a {
+  color: #01B6CD;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(1, 228, 205);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+h1 {
+  /*font-size: 28px;*/
+  font-weight: 400;
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 21px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  margin-top: 1em;
+}
+
+p:first-child {
+  margin-top: 0;
+}
+
+input {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+tt {
+  font-family: Consolas, monaco, monospace;
+  color: #ba8802;
+}
+
+/*
+ * General layout
+ * ===================================================== */
+
+#wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -22px;
+}
+
+#footer, #push {
+  height: 22px;
+  clear: both;
+}
+
+#footer {
+  line-height: 22px;
+  font-style: italic;
+  font-size: 15px;
+  /*padding-left: 5px;*/
+  background: #fbfbfb;
+  box-shadow: inset 0 2px 0 0 #BAB6B6;
+}
+
+#sidebar-container {
+  float: left;
+  width: 25%;
+}
+
+#sidebar {
+  background: #f4f4f4;
+  border: solid #BAB6B6;
+  border-radius: 15px;
+  border-width: 1px 0 1px 0;
+  height: auto;
+  padding: 12px;
+  top: 0;
+  bottom: 30px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#sidebar span {
+  display: block;
+  font-size: 16px;
+  /*height: 1em;*/
+}
+
+#sidebar div {
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+.namespaceFold {
+  position:absolute;
+  margin-top: -1.25em;
+  cursor: pointer;
+  /*width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid green;*/
+}
+
+#content-container {
+  float: left;
+  width: 75%;
+}
+
+#content {
+  /*margin-left: 220px;*/
+  width: 100%;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#content #content-header {
+  border-bottom: 1px solid #01B6CD;
+  /*margin-bottom: 10px;*/
+  padding-bottom: 5px;
+  float: none;
+}
+
+/* So the last 'class description' has a border on bottom */
+div #content .itemContainer:last-child {
+  border-top: 1px solid #01B6CD;
+  border-bottom: none;
+}
+
+#content .subSection {
+  float: left;
+  clear: both;
+  /*margin-top: 20px;*/
+  margin-top: 25px;
+  width: 100%;
+}
+
+#content .subSection h2 {
+  border-bottom: 1px solid #d5d5d5;
+  margin-bottom: 14px;
+  padding-bottom: 5px;
+  float: none;
+}
+
+#content em {
+  font-style: normal;
+  color: #BB9007;
+}
+
+.subSection .signature {
+  background: #ededed;
+  clear: both;
+  font-size: 17px;
+  margin-bottom: 10px;
+  padding: 3px;
+  width: 100%;
+}
+
+#content .subSection:last-child {
+  margin-bottom: 22px;
+}
+
+/*#content .subSection:first-child {
+  margin-top: 10px;
+}*/
+
+/*#content .subSection {
+  float: left;
+}*/
+
+#header {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px solid #FFD11E;
+}
+
+#header .wrap {
+  /*height: 38px;
+  line-height: 38px;*/
+}
+
+/*
+ * Grid layout
+ * ===================================================== */
+
+.col {
+  float: left;
+}
+
+.col.three {
+  width: 150px;
+}
+
+.col.four {
+  width: 200px;
+}
+
+.col.six {
+  width: 300px;
+}
+
+.col.nine {
+  width: 450px;
+}
+
+.col.twelve {
+  width: 600px;
+}
+
+/*
+ * Shared
+ * ===================================================== */
+
+.bordered {
+  box-shadow: inset 0 0 0 2px gray;
+}
+
+.wrap {
+  max-width: 100%;
+}
+
+.spacing {
+  height: 20px;
+}
+
+#content div {
+  float: left;
+}
+
+#content .itemContainer {
+  clear: both;
+  width: 100%;
+  border-bottom: 1px solid #d5d5d5;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#content div:nth-child(2) {
+  /*margin-top: 10px;*/
+}
+
+#content .itemContainer:nth-child(2) {
+  /*border-top: 1px solid #d5d5d5;*/
+}
+
+#content .itemContainer:last-child {
+  /*border-bottom: 1px solid #d5d5d5;*/
+  /*border-color: #01B6CD;*/
+  /*border: none;*/
+}
+
+div#content .itemContainer:nth-child(2) {
+  border-top: 1px solid #d5d5d5;
+  /*box-shadow: inset 0px 1px 0px 0px #01B6CD;*/
+}
+
+/*div #content .itemContainer:last-child {
+  border-bottom: 1px solid #01B6CD;
+  box-shadow: inset 0px -1px 0px 0px #01B6CD;
+}*/
+
+#content span {
+  float: left;
+  /*clear: both;*/
+  /*min-width: 200px;*/
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.entryContainer {
+  width: 100%;
+}
+
+.entryName {
+  /*font-size: 18px;*/
+  width: 20%;
+}
+
+.entryDescription {
+  width: 80%;
+  padding-left: 10px;
+  border-left: 1px solid #d5d5d5;
+}
+
+#search-bar-container {
+  /*background: red;*/
+}
+
+/*
+ * Entry page
+ * ===================================================== */
+
+.details {
+  padding-left: 10px;
+  /*clear: both;
+  padding-left: 10px;
+  margin-top: 15px;*/
+}
+
+.parametersTitle, .defaultTitle {
+  font-weight: 600;
+}
+
+.description, .parametersContainer, .defaultContainer {
+    float:left;
+    clear:both;
+    margin-top: 14px;
+}
+
+.parametersContainer:first-child, .defaultContainer:first-child {
+  margin-top: 0px;
+}
+
+.propertiesTable {
+  /*float: l;*/
+}
+
+.detailsBodyItem {
+  width: 100%;
+}
+
+
+#functions-section .parameters {
+  /*margin-top: 14px;*/
+}
+
+/*.subSection .signature ~ .signature {
+    margin-top: 20px;
+}*/
+
+.functionContainer {
+  float: left;
+  clear: both;
+  width: 100%;
+  /*margin-bottom: 22px;*/
+  margin-top: 20px;
+}
+
+.subSection .functionContainer:nth-child(2) {
+  margin-top:0px;
+}
+
+.subSection > *:last-child {
+  margin-bottom: 0px;
+}
+
+.functionContainerBody {
+  float: left;
+  clear: both;
+  padding-left: 10px;
+}
+
+.memberDiv {
+  float: left;
+  clear: both;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.memberDiv h4 {
+  font-weight: 400;
+  background: #ededed;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 2px 5px;
+  margin-bottom: 14px;
+}
+
+.memberDivBody {
+  padding-left: 20px;
+}
+
+.memberDiv span {
+  /*padding-left: 20px;*/
+}
+
+.memberDiv .memberDescr, .parameters {
+  /*padding-left: 20px;*/
+}
+
+.memberDiv > .parameters {
+  margin-top: 0px;
+}
+
+/*
+ * Parameters Table
+ * ===================================================== */
+
+.parametersTable, .summaryTable, .defaultDescr {
+  float: left;
+  clear: both;
+  /*padding-left: 20px;*/
+}
+
+.parametersTable th, .detailsBodyTable td, .defaultDescr {
+  padding: 2px 10px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.summaryTable td, .summaryTable th {
+  padding: 4px 12px;
+  border: 1px solid #dedede;
+  font-weight: 400;
+  vertical-align: top;
+  text-align: left;
+}
+
+.defaultDescr {
+  color: #cc4290;
+  /*font-size: 1.1em;*/
+}
+
+.parametersTable th {
+  color: #E047DF;
+}
+
+.parametersTable td {
+  padding-left: 12px;
+}
+
+.summaryTable th {
+  background-image: -moz-linear-gradient(left top , #918D87 0%, #D2CBBA 100%);
+  /*background: #6a9fb4;*/
+  /*background: #376c81;*/
+  background: #51869b;
+  /*background: #999999;*/
+  color: white;
+}
+
+.summaryTable th a {
+  color: white;
+  /*font-variant: small-caps;
+  font-weight: 600;*/
+}
+
+.summaryTable th a:hover {
+  /*color:  */
+}
+
+.summaryTable td.propTypeCol {
+  text-align: right;
+}
+
+.propTypeCol {
+  text-align: right;
+}
+
+.descrDiv {
+  clear: both;
+  padding: 3px 1em 0px;
+}
+
+table.summaryTable {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+table.returnsTable {
+  float:left;
+  clear:both;
+}
+
+table.returnsTable th, table.returnsTable td {
+  border: none;
+  background: inherit;
+  color: inherit;
+}
