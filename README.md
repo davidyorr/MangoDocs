@@ -197,15 +197,14 @@ and not on the same line as the `@example` annotation.
 
 #### Complete list of annotations (and their shorthands)
 
-    @author             [@auth]
-    @class              [@cls]
-    @constructor        [@cstrct]
-    @deprecated         [@dep]
+    @author
+    @class
+    @constructor        [@ctor]
     @event              [@evt]
     @example            [@ex]
     @instancemethod     [@im]
     @instanceproperty   [@ip]
-    @param              [@p]
+    @param
     @return             [@ret]
     @staticmethod       [@sm]
     @staticproperty     [@sp]

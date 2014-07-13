@@ -51,11 +51,15 @@ public enum Annotation {
      */
     public static Annotation getAlias(String str) {
         switch (str.toUpperCase()) {
-            case "IM" : return Annotation.INSTANCEMETHOD;
-            case "IP" : return Annotation.INSTANCEPROPERTY;
-            case "SM" : return Annotation.STATICMETHOD;
-            case "SP" : return Annotation.STATICPROPERTY;
-            default   : return null;
+            case "CTOR" : return Annotation.CONSTRUCTOR;
+            case "EVT"  : return Annotation.EVENT;
+            case "EX"   : return Annotation.EXAMPLE;
+            case "IM"   : return Annotation.INSTANCEMETHOD;
+            case "IP"   : return Annotation.INSTANCEPROPERTY;
+            case "RET"  : return Annotation.RETURN;
+            case "SM"   : return Annotation.STATICMETHOD;
+            case "SP"   : return Annotation.STATICPROPERTY;
+            default     : return null;
         }
     }
 
