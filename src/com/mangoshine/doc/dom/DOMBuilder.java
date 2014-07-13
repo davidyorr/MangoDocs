@@ -63,6 +63,16 @@ public class DOMBuilder {
         return sb.toString();
     }
 
+    static public String buildTitleHTML() {
+        Entry currentEntry = WriterHelper.INSTANCE.currentEntry;
+
+        if (currentEntry == null) {
+            return "MangoDocs";
+        }
+
+        return currentEntry.getName();
+    }
+
     /**
      * Generates a DOMNode for a sub section on a class page.
      * @param title - the title of the section

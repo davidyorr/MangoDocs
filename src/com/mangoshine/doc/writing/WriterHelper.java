@@ -91,7 +91,7 @@ public enum WriterHelper {
     }
 
     private String handleTitle() {
-        return "";
+        return DOMBuilder.buildTitleHTML();
     }
 
     /**
