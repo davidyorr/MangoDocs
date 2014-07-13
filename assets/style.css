@@ -23,6 +23,8 @@ html, body {
 
 body {
   padding: 0px 20px;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 span, div, p {
